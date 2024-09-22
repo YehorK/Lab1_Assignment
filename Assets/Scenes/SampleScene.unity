@@ -439,8 +439,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleSpeed: 1
-  scaleIncrease: 2
-  colorSpeed: 1
+  scaleIncrease: 3
+  colorSpeed: 4
   startColor: {r: 0.8862746, g: 0.89019614, b: 0.8745099, a: 0}
   endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &762807953
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 762807955}
   - component: {fileID: 762807954}
   m_Layer: 0
-  m_Name: CylinderMoveRotateController
+  m_Name: CylinderMouseMoveController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

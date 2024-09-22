@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // The script is very simple, and in fact we only use a DropDownControl function
-// to trigger the dropdown UI to switch between the interactive elements within the scene
+// to trigger the dropdown UI to switch between the interactive elements within the game scene
 
 public class MenuSelectionControl : MonoBehaviour
 {

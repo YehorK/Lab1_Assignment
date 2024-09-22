@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CylinderMouseControl : MonoBehaviour
 {
-    private Transform cylinder; // Reference to the cylinder\
+    private Transform cylinder; // Reference to the cylinder
 
     void Start()
     {
-        // Get the cylinder (assumed to be the child of this GameObject)
+        // Get the cylinder (assumed to be the child of the Empty GameObject)
         cylinder = transform.Find("Cylinder"); // 
     }
 
@@ -25,10 +25,10 @@ public class CylinderMouseControl : MonoBehaviour
     {
         // Raycast from the mouse position to the world
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        if (Physics.Raycast(ray, out RaycastHit hit)) // Checking the projected ray and any possible collisions
         {
-            // Move the cylinder to the mouse position on the ground plane
-            cylinder.position = new Vector3(hit.point.x, hit.point.y, cylinder.position.z); // Keep z position unchanged
+            // Update the cylinder's position  to the mouse position on the ground plane
+            cylinder.position = new Vector3(hit.point.x, hit.point.y, cylinder.position.z); // Keep z position unchanged - so we move in XY plane
         }
     }
 }

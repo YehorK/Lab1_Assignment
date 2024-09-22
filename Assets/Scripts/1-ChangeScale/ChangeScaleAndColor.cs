@@ -26,7 +26,7 @@ public class CubeController : MonoBehaviour
             initialScale = cubeTransform.localScale;
 
             // Get the cube's Renderer component
-            cubeRenderer = cubeTransform.GetComponent<Renderer>();
+            cubeRenderer = cubeTransform.GetComponent<Renderer>(); // Required for changing the appearance of the object
         }
         else
         {
@@ -58,8 +58,8 @@ public class CubeController : MonoBehaviour
             }
         }
 
-        // Handle color change
-        float colorLerp = Mathf.PingPong(Time.time * colorSpeed, 1);
-        cubeRenderer.material.color = Color.Lerp(startColor, endColor, colorLerp);
+        // Handle smooth color change
+        float colorLerp = Mathf.PingPong(Time.time * colorSpeed, 1); // API for increments 
+        cubeRenderer.material.color = Color.Lerp(startColor, endColor, colorLerp); // Interpolation
     }
 }

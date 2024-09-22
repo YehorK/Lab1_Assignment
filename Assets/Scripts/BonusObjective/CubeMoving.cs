@@ -5,11 +5,11 @@ using UnityEngine;
 public class CubeMoving : MonoBehaviour
 {
     public GameObject spherePrefab;
-    [SerializeField] float moveSpeed = 5f;
-    [SerializeField] float sphereLifetime = 2.5f;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float sphereLifetime = 2.5f;
     private float distanceThreshold = 1f; // Distance between spheres
 
-    private Vector3 lastPosition;
+    private Vector3 lastPosition; // To keep track of the last known position
 
     private void Start()
     {
@@ -28,7 +28,7 @@ public class CubeMoving : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
-        if (movement != Vector3.zero)
+        if (movement != Vector3.zero) // Create the trail if the cube is moving
         {
             CreateTrailSphere();
         }
@@ -41,7 +41,7 @@ public class CubeMoving : MonoBehaviour
         {
             GameObject sphere = Instantiate(spherePrefab, transform.position, Quaternion.identity);
             Destroy(sphere, sphereLifetime);
-            sphere.GetComponent<Renderer>().material.color = Random.ColorHSV();
+            sphere.GetComponent<Renderer>().material.color = Random.ColorHSV(); // Use the API for random color selection for newly generated spheres
 
             // Update the last position
             lastPosition = transform.position;

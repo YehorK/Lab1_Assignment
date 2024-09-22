@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CubeIsCaught : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision) // Check for the coliders collision
     {
         // Check if the cube collided with the plane
-        if (collision.gameObject.CompareTag("Plane"))
+        if (collision.gameObject.CompareTag("Plane")) // the same Tag "Plane" must be also assigned to the Plane gameobject
         {
-            StartCoroutine(DestroyAfterDelay(0.5f)); // Start the coroutine with a delay
+            StartCoroutine(DestroyAfterDelay(0.5f)); // Start the coroutine - the function used to create a delay in execution
         }
     }
 
