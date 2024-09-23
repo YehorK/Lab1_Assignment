@@ -8,7 +8,7 @@ The goal of this project was to implement several interactive elements to explor
 ## Video Demo
 The video demonstrates all of the created elements in the project.
 
-[![Lab 1 Video Demo](https://img.youtube.com/vi/8yEMFoMFF1g/0.jpg)]([https://www.youtube.com/watch?v=VIDEO_ID](https://youtu.be/8yEMFoMFF1g))
+[![Lab 1 Video Demo](https://img.youtube.com/vi/8yEMFoMFF1g/0.jpg)](https://youtu.be/8yEMFoMFF1g))
 
 ## Table of Contents
 - [Rescaling Cube](#rescaling-cube)
