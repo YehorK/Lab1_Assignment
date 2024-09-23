@@ -6,7 +6,9 @@ Unity 2022.3.46f1 is used.
 The goal of this project was to implement several interactive elements to explore and learn Unity. Please refer to the Table of Content an d the subsequest sections for further details.
 
 ## Video Demo
-The video demonstrates all of thye created elements in the project, discusses the project structure, and future improvements.
+The video demonstrates all of the created elements in the project.
+
+[![Lab 1 Video Demo](https://img.youtube.com/vi/8yEMFoMFF1g/0.jpg)]([https://www.youtube.com/watch?v=VIDEO_ID](https://youtu.be/8yEMFoMFF1g))
 
 ## Table of Contents
 - [Rescaling Cube](#rescaling-cube)
